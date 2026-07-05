@@ -109,3 +109,5 @@ Emo OS is fully optimized to be hosted as a static site. You can easily host thi
 
 ---
 *Developed with 💜 by Mohit.*
+
+ 
