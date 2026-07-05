@@ -120,3 +120,4 @@ Emo OS is fully optimized to be hosted as a static site. You can easily host thi
 <!-- Minor tweak 7 -->
 <!-- Minor tweak 8 -->
 <!-- Minor tweak 9 -->
+<!-- Minor tweak 10 -->
