@@ -246,6 +246,11 @@ export const loadSettings = () => {
     }
   }
 
+  // Force update old cached "Blue Edge" name to "Mohit"
+  if (sett.person && sett.person.name === "Blue Edge") {
+    sett.person.name = "Mohit";
+  }
+
   if (sett.person.theme != "light") changeTheme();
 
   store.dispatch({ type: "SETTLOAD", payload: sett });
