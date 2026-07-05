@@ -37,7 +37,7 @@ export const AboutWin = () => {
           {t("about.licensed")}&nbsp;
           <a
             target="_blank"
-            href="https://github.com/Mohit/EmoOS/blob/master/LICENSE"
+            href="https://github.com/Emomohit/EmoOS/blob/master/LICENSE"
             rel="noreferrer"
           >
             {t("about.Creative-Commons")}

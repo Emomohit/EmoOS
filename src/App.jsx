@@ -48,8 +48,8 @@ function ErrorFallback({ error, resetErrorBoundary }) {
               <h4>
                 For more information about this issue and possible fixes, visit
                 <br />{" "}
-                <a href="https://github.com/Mohit/EmoOS/issues">
-                  https://github.com/Mohit/EmoOS/issues
+                <a href="https://github.com/Emomohit/EmoOS/issues">
+                  https://github.com/Emomohit/EmoOS/issues
                 </a>{" "}
               </h4>
               <h5>

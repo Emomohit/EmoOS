@@ -285,7 +285,7 @@ const apps = [
     icon: "github",
     type: "app",
     action: "EXTERNAL",
-    payload: "https://github.com/Mohit/EmoOS",
+    payload: "https://github.com/Emomohit/EmoOS",
   },
   {
     name: "Emo-Links",
