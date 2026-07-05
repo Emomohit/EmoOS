@@ -198,7 +198,7 @@ const apps = [
     icon: "pinterest",
     type: "app",
     action: "EXTERNAL",
-    payload: "https://www.pinterest.com/blueedgetechno/",
+    payload: "https://www.pinterest.com/Mohit/",
   },
   {
     name: "Security",

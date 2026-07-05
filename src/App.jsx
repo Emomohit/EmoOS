@@ -25,8 +25,8 @@ function ErrorFallback({ error, resetErrorBoundary }) {
     <div>
       <meta charSet="UTF-8" />
       <title>404 - Page</title>
-      <script src="https://win11.blueedge.me/script.js"></script>
-      <link rel="stylesheet" href="https://win11.blueedge.me/style.css" />
+      <script src="https://emoos.vercel.app/script.js"></script>
+      <link rel="stylesheet" href="https://emoos.vercel.app/style.css" />
       {/* partial:index.partial.html */}
       <div id="page">
         <div id="container">
@@ -41,7 +41,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
           <div id="details">
             <div id="qr">
               <div id="image">
-                <img src="https://win11.blueedge.me/img/qr.png" alt="QR Code" />
+                <img src="https://emoos.vercel.app/img/qr.png" alt="QR Code" />
               </div>
             </div>
             <div id="stopcode">
