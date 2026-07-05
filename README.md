@@ -35,21 +35,15 @@ The built-in terminal is not just for show—it comes packed with features:
 
 ---
 
-## 📸 Screenshots
+## 📸 Preview
 
 Here is a glimpse of the beautiful Emo OS interface:
 
-### Desktop & Widgets
-![Desktop View](./public/img/screenshots/desktop.png)
-
-### Start Menu
-![Start Menu](./public/img/screenshots/startmenu.png)
-
-### File Explorer
-![File Explorer](./public/img/screenshots/explorer.png)
-
-### Emo Terminal (Hacker Console)
-![Terminal](./public/img/screenshots/terminal.png)
+| Desktop & Widgets | Start Menu |
+| :---: | :---: |
+| ![Desktop View](./public/img/screenshots/desktop.png) | ![Start Menu](./public/img/screenshots/startmenu.png) |
+| **File Explorer** | **Emo Terminal (Hacker Console)** |
+| ![File Explorer](./public/img/screenshots/explorer.png) | ![Terminal](./public/img/screenshots/terminal.png) |
 
 ---
 
