@@ -312,7 +312,7 @@ const apps = [
     icon: "xbox",
     type: "app",
     action: "EXTERNAL",
-    payload: "https://play2048.co/",
+    payload: "https://emo-games.vercel.app/",
   },
 ];
 
