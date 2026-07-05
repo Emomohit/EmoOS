@@ -74,6 +74,8 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
 }
 
 body[data-theme="dark"] .startMenu {

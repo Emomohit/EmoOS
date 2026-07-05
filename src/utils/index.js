@@ -21,6 +21,7 @@ var { taskbar, desktop, pinned, recent } = {
     "EMOVibes",
     "Get EMOVibes",
     "Emo-Learners",
+    "Emo-Games",
   ],
   pinned: (localStorage.getItem("pinned") &&
     JSON.parse(localStorage.getItem("pinned"))) || [

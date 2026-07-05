@@ -307,6 +307,13 @@ const apps = [
     action: "EXTERNAL",
     payload: "https://emolearners.vercel.app/",
   },
+  {
+    name: "Emo-Games",
+    icon: "xbox",
+    type: "app",
+    action: "EXTERNAL",
+    payload: "https://play2048.co/",
+  },
 ];
 
 for (let i = 0; i < installed.length; i++) {

@@ -9,8 +9,8 @@ import dirs from "./assets/dir.json";
 
 export const WnTerminal = () => {
   const wnapp = useSelector((state) => state.apps.terminal);
-  const [stack, setStack] = useState(["OS [Version 10.0.22000.51]", ""]);
-  const [pwd, setPwd] = useState("C:\\Users\\Blue");
+  const [stack, setStack] = useState(["Emo OS [Version 1.0.0]", "Type 'neofetch' to see system specs", ""]);
+  const [pwd, setPwd] = useState("C:\\Users\\Mohit");
   const [lastCmd, setLsc] = useState(0);
   const [wntitle, setWntitle] = useState("Terminal");
 
@@ -58,7 +58,7 @@ export const WnTerminal = () => {
 
   const cmdTool = async (cmd) => {
     var tmpStack = [...stack];
-    tmpStack.push(pwd + ">" + cmd);
+    tmpStack.push("mohit@Emo-OS:~" + pwd.replace("C:\\Users\\Mohit", "").replace(/\\/g, "/") + "$ " + cmd);
     var arr = cmd.split(" "),
       type = arr[0].trim().toLowerCase(),
       arg = arr.splice(1, arr.length).join(" ") || "";
@@ -265,12 +265,12 @@ export const WnTerminal = () => {
           Math.floor(Math.random() * 100),
       );
     } else if (type == "exit") {
-      tmpStack = ["OS [Version 10.0.22000.51]", ""];
+      tmpStack = ["Emo OS [Version 1.0.0]", "Type 'neofetch' to see system specs", ""];
       dispatch({ type: wnapp.action, payload: "close" });
     } else if (type == "title") {
       setWntitle(arg.length ? arg : "Terminal");
     } else if (type == "hostname") {
-      tmpStack.push("blue");
+      tmpStack.push("mohit");
     } else if (type == "login") {
       login();
       tmpStack.push("started login");
@@ -282,16 +282,30 @@ export const WnTerminal = () => {
     } else if (type == "dev") {
       tmpStack.push("https://dev.emovibes.vercel.app/");
     } else if (type == "ver") {
-      tmpStack.push("OS [Version 10.0.22000.51]");
+      tmpStack.push("Emo OS [Version 1.0.0]");
+    } else if (type == "neofetch") {
+      tmpStack.push("       .xOx.        mohit@Emo-OS");
+      tmpStack.push("     .xOOOOOx.      ------------");
+      tmpStack.push("    xOOOOOOOOOx     OS: Emo OS v1.0");
+      tmpStack.push("   xOOOOOOOOOOOx    Kernel: React + Redux");
+      tmpStack.push("  xOOOOOOOOOOOOOx   Uptime: Forever");
+      tmpStack.push("  xOOOOOOOOOOOOOx   Shell: EmoTerm");
+      tmpStack.push("   xOOOOOOOOOOOx    Resolution: 4K Neon");
+      tmpStack.push("    xOOOOOOOOOx     Theme: Neo-Cyberpunk Dark");
+      tmpStack.push("     'xOOOOOx'      Icons: Emo Icons");
+      tmpStack.push("       'xOx'        Terminal: Emo Console");
+    } else if (type == "play" && arg == "music") {
+      tmpStack.push("Starting EMOVibes...");
+      dispatch({ type: "SPOTIFY" });
     } else if (type == "systeminfo") {
       var dvInfo = [
-        "Host Name:                 BLUE",
-        "OS Name:                   Win11React Dummys Edition",
-        "OS Version:                10.0.22000 N/A Build 22000.51",
-        "OS Manufacturer:           ",
+        "Host Name:                 MOHIT",
+        "OS Name:                   Emo OS Premium Edition",
+        "OS Version:                1.0.0 N/A Build 1000",
+        "OS Manufacturer:           Mohit",
         "OS Configuration:          Standalone Workstation",
         "OS Build Type:             Multiprocessor Free",
-        "Registered Owner:          Blue",
+        "Registered Owner:          Mohit",
         "Registered Organization:   N/A",
         "Product ID:                7H1S1-5AP1R-473DV-3R5I0N",
       ];
@@ -448,8 +462,8 @@ export const WnTerminal = () => {
           var i = lastCmd + [1, -1][Number(event.key == "ArrowUp")];
 
           while (i >= 0 && i < stack.length) {
-            if (stack[i].startsWith("C:\\") && stack[i].includes(">")) {
-              var tp = stack[i].split(">");
+            if (stack[i].includes("$ ")) {
+              var tp = stack[i].split("$ ");
               event.target.innerText = tp[1] || "";
               setLsc(i);
               break;
@@ -526,7 +540,7 @@ export const WnTerminal = () => {
                 </pre>
               ))}
               <div className="cmdLine actmd">
-                {pwd}&gt;
+                mohit@Emo-OS:~{pwd.replace("C:\\Users\\Mohit", "").replace(/\\/g, "/")}$&nbsp;
                 <div
                   className="ipcmd"
                   id="curcmd"

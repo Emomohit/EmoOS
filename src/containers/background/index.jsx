@@ -50,7 +50,7 @@ export const BootScreen = (props) => {
   return (
     <div className="bootscreen">
       <div className={blackout ? "hidden" : ""}>
-        <Image src="asset/bootlogo" w={180} />
+        <div style={{color: 'white', fontSize: '3rem', fontWeight: 'bold', textShadow: '0 0 20px #8b5cf6', textAlign: 'center', marginBottom: '20px'}}>Emo OS</div>
         <div className="mt-48" id="loader">
           <svg
             className="progressRing"

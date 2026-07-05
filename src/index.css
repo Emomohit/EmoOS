@@ -17,6 +17,7 @@ body {
   height: 100vh;
   user-select: none;
   overflow: hidden !important;
+  cursor: url('https://cdn.custom-cursor.com/db/8222/32/neon-purple-cursor.png'), auto;
 }
 
 body:before {
