@@ -300,6 +300,13 @@ const apps = [
     type: "app",
     action: "DISCORD",
   },
+  {
+    name: "Emo-Learners",
+    icon: "edge",
+    type: "app",
+    action: "EXTERNAL",
+    payload: "https://emolearners.vercel.app/",
+  },
 ];
 
 for (let i = 0; i < installed.length; i++) {
